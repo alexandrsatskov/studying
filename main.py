@@ -1,6 +1,18 @@
 import socket
 
 
+def parse_request(request):
+    method, url, *_ = request.split()
+    return method, url
+
+
+def generate_response(request):
+    method, url = parse_request(request)
+    headers, status_code = generate_headers(method, url)
+    body = generate_body(status_code, url)
+    return (headers + body).encode()
+
+
 def main():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
