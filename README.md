@@ -1,4 +1,3 @@
-# Репозиторий для различных тренировок в рамках обучения  
-## Ветки  
-1. [algorithms](https://github.com/twinkleToes2001/studying/tree/algorithms) -> Алгоритмы, связанные с ними задачи 
-2. [pyasync](https://github.com/twinkleToes2001/studying/tree/pyasync) -> Попытка вникнуть в python async и общую идею параллелизма
+### Здесь собраны мои попытки как-то вникнуть в алгоритмы и порешать задачки
+На данный момент есть некоторые задачи из yandex-contest из их [мини-курса по
+алгоритмам](https://yandex.ru/yaintern/algorithm-training)
