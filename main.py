@@ -1,5 +1,28 @@
 import socket
 
+URLS = {
+    '/': 'main page',
+    '/about': 'about us page',
+}
+
+
+def generate_body(status_code, url):
+    if status_code == 404:
+        return '<h1>404</h1><p>Not found</p>'
+    if status_code == 405:
+        return '<h1>405</h1><p>Method not allowed</p>'
+    return f'<h1>{URLS[url]}</h1>'
+
+
+def generate_headers(method, url):
+    if method != 'GET':
+        return 'HTTP/1.1 405 Method not allowed\n\n', 405
+
+    if url not in URLS:
+        return 'HTTP/1.1 404 Not found\n\n', 404
+
+    return 'HTTP/1.1 200 OK\n\n', 200
+
 
 def parse_request(request):
     method, url, *_ = request.split()
