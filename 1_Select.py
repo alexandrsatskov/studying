@@ -41,4 +41,6 @@ def event_loop():
 
 if __name__ == '__main__':
     to_monitor.append(server_sock)
+    event_loop()
+
 

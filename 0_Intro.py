@@ -19,7 +19,6 @@ while True:
             response = 'Hello world\n'.encode()
             client_socket.send(response)
         else:
+            client_socket.close()
             break
-        client_socket.close()
-        print('Вне внутреннего цикла')
 
