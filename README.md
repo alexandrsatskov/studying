@@ -40,10 +40,6 @@
 ## Визуализация
 
 
-## Документация API
-[api.yaml](https://github.com/twinkleToes2001/studying/blob/yandex_feature/api.yaml "Swagger docs")
-
-
 ## Тесты 
 unit:  
 1. Протестировать работу плеера  
