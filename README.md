@@ -45,7 +45,7 @@
 
 
 ## Визуализация
-
+![Схема](https://user-images.githubusercontent.com/56599235/124064524-a1f54c80-da3d-11eb-8e56-8f38b1a540d8.png)
 
 ## Тесты 
 unit:  
